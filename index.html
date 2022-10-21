@@ -20,7 +20,7 @@
         <li><a href="Preguntas frecuentes">Preguntas frecuentes</a></li>
       </ul>
     </nav>
-    <section>
+    <section class="imagenformulario">
       <img src="xxx.png" />
       <div class="que-hacemos">
         <h2>FRASE LLAMATIVA</h2>
@@ -29,15 +29,61 @@
       </div>
       <div class="formulario">
 		<form>
-			<input type="date" name="Fecha inicio">
-			<input type="date" name="Fecha fin">
-			<input type="text" name="Origen" placeholder="Ciudad de origen">
-			<input type="number" name="Acompañantes" placeholder="Acompañantes">
-			<input type="range" min="200" max="20000" name="Presupuesto">
-			<input type="submit" value ="enviar" >
+      <label for="fechainicio">Fecha de Inicio</label>
+			<input id="fechainicio" type="date" name="Fecha inicio">
+			<label for="fechafin">Fecha de Fin</label>
+      <input id="fechafin" type="date" name="Fecha fin">
+      <label for="ciudaddeorigen">Ciudad de origen</label>
+			<input id="ciudaddeorigen" type="text" name="Ciudad de origen">
+      <label for="acompañantes">Acompañantes</label>
+			<input id="acompañantes" type="number" name="Acompañantes">
+      <label for="precio">Precio</label>
+			<input id="precio" type="range" min="200" max="20000" name="Precio">
+			<input type="submit" value ="Enviar" >
 		</form>
 	  </div>
     </section>
+     <!--TESTIMONIOS-->
+    <div class="testimonios">
+      <h3>+100.000 Viajeros</h3>
+      <h2>¿Que dicen nuestros clientes?</h2>
+      <hr>
+      <input type="radio" name="diapositiva" id="radio1" checked>
+      <input type="radio" name="diapositiva" id="radio2">
+      <input type="radio" name="diapositiva" id="radio3">
+      <ul class="diapositiva">
+        <li class="deslizar">
+          <p>
+            <q>“No sabía nada, acabé fumando cachimba
+              en un zoco del norte de África”.</q>
+            <span class="autor">
+              <img src="testimonio1.jpg">
+              Pedro Perez
+            </span>
+          </p>
+        </li>
+        <li class="deslizar">
+          <p>
+            <q>“No sabía nada, acabé fumando cachimba
+              en un zoco del norte de África”.</q>
+            <span class="autor">
+              <img src="testimonio2.jpg">
+              Pedro Perez
+            </span>
+          </p>
+        </li>
+        <li class="deslizar">
+          <p>
+            <q>“No sabía nada, acabé fumando cachimba
+              en un zoco del norte de África”.</q>
+            <span class="autor">
+              <img src="testimonio3.jpg">
+              Pedro Perez
+            </span>
+          </p>
+        </li>
+      </ul>
+    </div>
     <aside></aside>
     <footer></footer>
   </body>

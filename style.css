@@ -1,0 +1,67 @@
+ .testimonios{
+    max-width: 750px;
+    margin: auto;
+    margin-top: 20cm;
+    position: relative;
+    background: white;
+    text-align: center;
+    padding: 4 cm 0;
+    overflow: hidden;
+ }
+
+ .testimonios h2{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 100;
+    color: black;
+ }
+
+ .testimonios hr{
+    width: 600px;
+    height: 4px;
+    border: none;
+    background: red;
+    margin-top: 30px;
+ }
+
+ .testimonios .diapositiva{
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    transition: all .8s cubic-bezier(1,0,0,1);
+ }
+ .diapositiva li{
+    width: 25%;
+    position: relative;
+    float: letf; 
+ }
+ .testimonios li p{
+    margin-top: 0;
+ }
+.testimonios li q{
+    max-width: 90px;
+    margin: auto;
+    color: #666666;
+    font-size: 20px;
+    font-weight: bold;
+}
+.testimonios li img{
+    width: 240px;
+    border-radius: 200px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.testimonios li span.autor{
+margin-top: 20px;
+font-size: 18px;
+font-weight: 100;
+color: #777777;
+display: block;
+}
+.testimonios input{
+    display: none;
+}
