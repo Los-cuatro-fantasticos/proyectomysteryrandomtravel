@@ -22,7 +22,7 @@
     </nav>
     <section class="imagenformulario">
       <img src="xxx.png" />
-      <div class="que-hacemos">
+      <div class="quehacemos">
         <h2>FRASE LLAMATIVA</h2>
         <h3>Qué hacemos</h3>
         <p>Parrafo de que hacemos y motivo formulario</p>
@@ -38,9 +38,16 @@
       <label for="acompañantes">Acompañantes</label>
 			<input id="acompañantes" type="number" name="Acompañantes">
       <label for="precio">Precio</label>
-			<input id="precio" type="range" min="200" max="20000" name="Precio">
+			<input id="precio" type="range" min="200" max="2000" step="10" value="1100" list="pricelist" name="Precio">
 			<input type="submit" value ="Enviar" >
 		</form>
+    <datalist id="priceslist">
+      <option value="200" label="0%">
+      <option value="650" label="25%">
+      <option value="1100" label="50%">
+      <option value="1550" label="75%">
+      <option value="2000" label="100%">
+    </datalist>
 	  </div>
     </section>
      <!--TESTIMONIOS-->
