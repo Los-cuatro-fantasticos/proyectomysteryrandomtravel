@@ -1,9 +1,247 @@
+/* Inici Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+}
+
+ol,
+ul {
+   list-style: none;
+}
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+
+/* Fi Reset CSS */
+
+
+
+.contenedor {
+   display: grid;
+   grid-template-columns: auto 500px;
+   grid-template-rows: repeat(8, 100%);
+   height: 100%;
+   font-family: 'Ubuntu', sans-serif;
+
+}
+
+.contenedor>* {
+   background-color: #dd1212;
+   border: 1px solid black;
+   color: white;
+   text-align: center;
+
+}
+
+header {
+   grid-column: 1 / span 2;
+   display: flex;
+   font-size: 60px;
+   font-family: 'Poiret One', cursive;
+}
+
+
+nav {
+   grid-column: 1 / span 2;
+}
+
+.imagenformulario {
+   grid-column: 1 / span 1;
+}
+
+.form-contact {
+   grid-column: 2 / span 1;
+}
+
+.testimonios {
+   grid-column: 1 / span 2;
+}
+
+.quehacemos {
+   grid-column: 1 / span 2;
+}
+
+.quiensomos {
+   grid-column: 1 / span 2;
+}
+
+.faq {
+   grid-column: 1 / span 2;
+}
+
+footer {
+   grid-column: 1 / span 2;
+}
+
+@media screen and (max-width:720px) {
+   header {
+      grid-column: 1 / span 2;
+   }
+
+   menu {
+      grid-column: 1 / span 2;
+   }
+
+   .imagenformulario {
+      grid-column: 1 / span 2;
+   }
+
+   .form-contact {
+      grid-column: 1 / span 2;
+   }
+
+   .testimonios {
+      grid-column: 1 / span 2;
+   }
+
+   .quehacemos {
+      grid-column: 1 / span 2;
+   }
+
+   .quiensomos {
+      grid-column: 1 / span 2;
+   }
+
+   .faq {
+      grid-column: 1 / span 2;
+   }
+
+   footer {
+      grid-column: 1 / span 2;
+   }
+}
+
+
+
 body {
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-header {
-   display: flex;
-}
+
 header img {
    width: 250px;
    height: 200px;
@@ -11,12 +249,12 @@ header img {
 header h1 {
    margin-top: 50px;
    margin-bottom: 0px;
-   margin-left: 5px;
+   margin-left: 30px;
 }
 header h3 {
    margin-bottom: 25px;
-   margin-top: 0px;
-   margin-left: 5px;
+   margin-top: 10px;
+   margin-left: 30px;
    text-decoration: overline;
 }
 nav a{
@@ -40,102 +278,109 @@ nav li{
    margin-right: 5px;
    margin-top: 5px;
 }
+
+.testimonios {
+   padding: 30px;
+   background-color: #db9706;
+}
+.testimonios h2{
+   font-size: 30px;
+}
+.testimonios h3 {
+   font-size: 60px;
+}
+.diapositiva {
+   display: flex;
+   justify-content: flex-start;
+}
+.deslizar {
+   display: flex;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+.deslizar img{
+   width: 200px;
+   border-radius: 50%;
+}
+.deslizar p {
+  align-self: center;
+  padding: 10px;
+}
 .quehacemos{
    text-align: justify;
-   margin: 5px;
+   background-color: #73c724;
 }
-form{
-	width:250px;
-   height: 250px;
-	padding:16px;
-	border: radius 10px;
-	margin:auto;
-	background-color:rgb(135, 163, 214);
+.quehacemos h3 {
+   font-size: 40px;
+   padding: 30px;
+   text-align: center;
 }
-form label {
-   width: 75px;
-	font-weight: bold;
-   font-size: small;
-	display:inline-block;
+.quiensomos {
+   background-color: #73c724;
 }
-form input[type="submit"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #db9706;
-	border-radius:5px;
-	display:block;
-	color:rgb(255, 255, 255);
-	background-color:#db9706;
-   cursor:pointer;
+.quiensomos h3{
+   font-size: 40px;
+   padding: 30px;
+   text-align: center;
 }
-.testimonios{
-    max-width: 750px;
-    margin: auto;
-    margin-top: 20cm;
-    position: relative;
-    background: white;
-    text-align: center;
-    padding: 4 cm 0;
-    overflow: hidden;
- }
+.faq {
+   background-color: #1d54b3;
+   padding: 30px;
+}
+.faq h2{
+   font-size: 30px;
+   padding: 10px;
+   text-align: left;
+}
+.faq h3 {
+   font-size: 20px;
+   padding: 10px;
+   text-align: left;
+}
 
- .testimonios h2{
-    margin: 0;
-    font-size: 30px;
-    font-weight: 100;
-    color: black;
- }
+.form-contact {
+   background-color: #FFF;
+   box-shadow: 7px 13px 37px rgba(0,0,0, .8)
+}
 
- .testimonios hr{
-    width: 600px;
-    height: 4px;
-    border: none;
-    background: red;
-    margin-top: 30px;
- }
+.contact {
+   padding: .8rem;
+   color: gray;
+}
 
- .testimonios .diapositiva{
-    width: 400%;
-    left: 0;
-    padding-left: 0;
-    padding-top: 20px;
-    overflow: hidden;
-    list-style: none;
-    position: relative;
-    transition: all .8s cubic-bezier(1,0,0,1);
- }
- .diapositiva li{
-    width: 25%;
-    position: relative;
-    float: letf; 
- }
- .testimonios li p{
-    margin-top: 0;
- }
-.testimonios li q{
-    max-width: 90px;
-    margin: auto;
-    color: #666666;
-    font-size: 20px;
-    font-weight: bold;
+.contact label, .contact input, .contact textarea {
+   display: block;
+   width: 100%;
+   margin-bottom: 8px;
 }
-.testimonios li img{
-    width: 240px;
-    border-radius: 200px;
-    vertical-align: middle;
-    margin-right: 10px;
+
+.contact label {
+   font-weight: 700;
 }
-.testimonios li span.autor{
-margin-top: 20px;
-font-size: 18px;
-font-weight: 100;
-color: #777777;
-display: block;
+
+.contact input:not([type='submit']), .contact textarea {
+   border: none;
+   border-bottom: 2px solid #ff165d;
+   margin-bottom: 10px;
+   font-size: 20px;
+   outline: none;
+   color: gray
 }
-.testimonios input{
-    display: none;
+
+.contact textarea {
+   min-height: 100px;
 }
+
+input[ type='submit'] {
+   padding: 10px;
+   border: none;
+   background-color: #ff165d;
+   color: white;
+   font-size: 20px;
+   cursor: pointer;
+}
+
 footer {
+   padding: 30px;
    text-align: center;
 }

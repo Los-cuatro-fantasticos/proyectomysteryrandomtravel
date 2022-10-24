@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Mystery Random Travel</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mystery Random Travel</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="contenedor">
+
+    <!--CABECERA-->
     <header>
       <img src="image.jpg" />
       <div>
         <h1>MISTERY RANDOM TRAVEL</h1>
-      <h3>LA SORPRESA DE VIATJAR</h3>
+        <h3>LA SORPRESA DE VIAJAR</h3>
       </div>
     </header>
+
+    <!--MENU-->
     <nav>
       <ul>
         <li><a href="Inicio">Inicio</a></li>
@@ -23,78 +34,83 @@
         <li><a href="Preguntas frecuentes">Preguntas frecuentes</a></li>
       </ul>
     </nav>
+
+    <!--IMATGE PRINCIPAL-->
     <section class="imagenformulario">
       <img src="image2.jpg" />
-      <div class="quehacemos">
-        <h2>FRASE LLAMATIVA</h2>
-        <h3>Qué hacemos</h3>
-        <p>Parrafo de que hacemos y motivo formulario</p>
-      </div>
-      <div class="formulario">
-		<form>
-      <label for="fechainicio">Fecha de Inicio</label>
-			<input id="fechainicio" type="date" name="Fecha inicio">
-			<label for="fechafin">Fecha de Fin</label>
-      <input id="fechafin" type="date" name="Fecha fin">
-      <label for="ciudaddeorigen">Ciudad de origen</label>
-			<input id="ciudaddeorigen" type="text" name="Ciudad de origen">
-      <label for="acompañantes">Acompañantes</label>
-			<input id="acompañantes" type="number" name="Acompañantes">
-      <label for="precio">Precio</label>
-			<input id="precio" type="range" min="200" max="2000" step="10" value="1100" list="pricelist" name="Precio">
-			<input type="submit" value ="Enviar" >
-		</form>
-    <datalist id="priceslist">
-      <option value="200" label="0%">
-      <option value="650" label="25%">
-      <option value="1100" label="50%">
-      <option value="1550" label="75%">
-      <option value="2000" label="100%">
-    </datalist>
-	  </div>
     </section>
-     <!--TESTIMONIOS-->
-    <div class="testimonios">
+
+    <!--FORMULARI-->
+    <aside class="form-contact">
+      <form action="" class="contact">
+        <label for="nombres">Nombres</label>
+        <input type="text" name="nombres" id="nombres">
+
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo">
+
+        <label for="nombres">Teléfono</label>
+        <input type="text" name="telefono" id="telefono">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </aside>
+
+    <!--QUE HACEMOS-->
+    <section class="quehacemos">
+      <h3>Nos encargamos de convertir en sorpresa tus sueños</h3>
+    </section>
+
+    <!--TESTIMONIOS-->
+    <section class="testimonios">
       <h3>+100.000 Viajeros</h3>
       <h2>¿Que dicen nuestros clientes?</h2>
       <hr>
-      <input type="radio" name="diapositiva" id="radio1" checked>
-      <input type="radio" name="diapositiva" id="radio2">
-      <input type="radio" name="diapositiva" id="radio3">
       <ul class="diapositiva">
         <li class="deslizar">
-          <p>
-            <q>“No sabía nada, acabé fumando cachimba
-              en un zoco del norte de África”.</q>
-            <span class="autor">
-              <img src="testimonio1.jpg">
-              Pedro Perez
-            </span>
-          </p>
+          <img src="img/testimonio1.png">
+          <p>“No sabía nada, acabé fumando cachimba
+            en un zoco del norte de África”.<br /><br />Pedro Perez</p>
         </li>
         <li class="deslizar">
-          <p>
-            <q>“No sabía nada, acabé fumando cachimba
-              en un zoco del norte de África”.</q>
-            <span class="autor">
-              <img src="testimonio2.jpg">
-              Pere Gil
-            </span>
-          </p>
+          <img src="img/testimonio2.png">
+          <p>“A no ser por Mystery Random Travel, nunca me habría atevido a salir volando.”.<br /><br />Elena Nito</p>
+
         </li>
         <li class="deslizar">
-          <p>
-            <q>“No sabía nada, acabé fumando cachimba
-              en un zoco del norte de África”.</q>
-            <span class="autor">
-              <img src="testimonio3.jpg">
-              Elena Nito
-            </span>
+          <img src="img/testimonio3.png">
+          <p>“Con lo poco detallista que es mi novia, nunca habría tenido un viaje tan romántico.”.<br /><br />Pere Gil
           </p>
         </li>
       </ul>
-    </div>
-    <aside></aside>
+    </section>
+
+    <!--QUIEN SOMOS-->
+    <section class="quiensomos">
+      <h3>Somos un grupo de apasionados de los viajes con mucha experiencia en el sector</h3>
+    </section>
+
+    <!--FAQ-->
+    <section class="faq">
+      <article>
+        <h2>Pregunta</h2>
+        <h3>Resposta</h3>
+      </article>
+      <article>
+        <h2>Pregunta</h2>
+        <h3>Resposta</h3>
+      </article>
+      <article>
+        <h2>Pregunta</h2>
+        <h3>Resposta</h3>
+      </article>
+
+    </section>
+
     <footer>&copy; Mistery Random Travel / datos de contacto / RRSS </footer>
-  </body>
+  </div>
+</body>
+
 </html>
