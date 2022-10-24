@@ -77,24 +77,16 @@ textarea {
 }
 
 .contenedor>* {
-   background-color: #dd1212;
-   border: 1px solid black;
-   color: white;
+   background-color: white;
+   border: 1px solid white;
+   color: black;
    text-align: center;
 
 }
 
-header {
-   grid-column: 1 / span 2;
-   display: flex;
-   font-size: 60px;
-   font-family: 'Poiret One', cursive;
-}
 
 
-nav {
-   grid-column: 1 / span 2;
-}
+
 
 .imagenformulario {
    grid-column: 1 / span 1;
@@ -122,6 +114,44 @@ nav {
 
 footer {
    grid-column: 1 / span 2;
+}
+
+@media screen and (max-width:1300px) {
+   header {
+      grid-column: 1 / span 2;
+   }
+
+   menu {
+      grid-column: 1 / span 2;
+   }
+
+   .imagenformulario {
+      grid-column: 1 / span 2;
+   }
+
+   .form-contact {
+      grid-column: 1 / span 2;
+   }
+
+   .testimonios {
+      grid-column: 1 / span 2;
+   }
+
+   .quehacemos {
+      grid-column: 1 / span 2;
+   }
+
+   .quiensomos {
+      grid-column: 1 / span 2;
+   }
+
+   .faq {
+      grid-column: 1 / span 2;
+   }
+
+   footer {
+      grid-column: 1 / span 2;
+   }
 }
 
 @media screen and (max-width:720px) {
@@ -165,12 +195,22 @@ footer {
 
 
 body {
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+   grid-column: 1 / span 2;
+   display: flex;
+   justify-content:center;
+   font-size: 60px;
+   font-family: 'Poiret One', cursive;
+   margin-left: 20px;
+   margin-bottom: 30px;
 }
 
 header img {
-   width: 250px;
-   height: 200px;
+   
+
 }
 header h1 {
    margin-top: 50px;
@@ -178,36 +218,52 @@ header h1 {
    margin-left: 30px;
 }
 header h3 {
+   color: gray;
+   font-size:40px;
    margin-bottom: 25px;
    margin-top: 10px;
    margin-left: 30px;
    text-decoration: overline;
 }
+
+nav {
+   position: sticky;
+   top: 0px;
+   grid-column: 1 / span 2;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+
+   
+}
 nav a{
    text-decoration: none;
    color: inherit;
-   font-size: 14px;
+   font-size: 18px;
+   
 }
-nav li{
-   display: inline-block;
-   padding: 5px 10px;
-   border: 2px solid #db9706;
-   text-align: center;
-  
-}
-.imagenformulario {
+nav ul {
    display: flex;
 }
-.imagenformulario img {
-   width: 400px;
-   height: 250px;
-   margin-right: 5px;
-   margin-top: 5px;
+nav li{
+   height: 50px;
+   width: 200px;
+   display: inline-block;
+   padding: 5px 10px;
+   
+   
 }
-
+nav li:hover {
+   color: white;
+   background-color:#ff165d;
+}
+.imagenformulario {
+   padding-top: 10px;
+   display: flex;
+}
 .testimonios {
    padding: 30px;
-   background-color: #db9706;
+   background-color: white;
 }
 .testimonios h2{
    font-size: 30px;
@@ -234,15 +290,15 @@ nav li{
 }
 .quehacemos{
    text-align: justify;
-   background-color: #73c724;
+   background-color: white;
 }
 .quehacemos h3 {
-   font-size: 40px;
+   font-size: 50px;
    padding: 30px;
    text-align: center;
 }
 .quiensomos {
-   background-color: #73c724;
+   background-color: white;
 }
 .quiensomos h3{
    font-size: 40px;
@@ -250,7 +306,7 @@ nav li{
    text-align: center;
 }
 .faq {
-   background-color: #1d54b3;
+   background-color: white;
    padding: 30px;
 }
 .faq h2{
@@ -266,7 +322,6 @@ nav li{
 
 .form-contact {
    background-color: #FFF;
-   box-shadow: 7px 13px 37px rgba(0,0,0, .8)
 }
 
 .contact {
@@ -278,6 +333,7 @@ nav li{
    display: block;
    width: 100%;
    margin-bottom: 8px;
+   font-size: 18px;
 }
 
 .contact label {
@@ -304,6 +360,10 @@ input[ type='submit'] {
    color: white;
    font-size: 20px;
    cursor: pointer;
+}
+
+input:hover {
+   color: black;
 }
 
 footer {
