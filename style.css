@@ -76,10 +76,7 @@ textarea {
 
 }
 
-.contenedor>* {
-   background-color: white;
-   border: 1px solid white;
-   color: black;
+.contenedor > * {
    text-align: center;
 
 }
@@ -105,6 +102,10 @@ textarea {
 }
 
 .faq {
+   grid-column: 1 / span 2;
+}
+
+.guialocal {
    grid-column: 1 / span 2;
 }
 
@@ -142,6 +143,10 @@ footer {
    }
 
    .faq {
+      grid-column: 1 / span 2;
+   }
+
+   .guialocal {
       grid-column: 1 / span 2;
    }
 
@@ -183,6 +188,10 @@ footer {
       grid-column: 1 / span 2;
    }
 
+   .guialocal {
+      grid-column: 1 / span 2;
+   }
+
    footer {
       grid-column: 1 / span 2;
    }
@@ -219,20 +228,37 @@ header h3 {
    text-decoration: overline;
 }
 
+hr {
+   color:#ff165d;
+   display: block;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   margin-left: 300px;
+   margin-right: 300px;
+   border-style: solid;
+   border-width: 2px;
+}
+
 nav {
    position: sticky;
    top: 0px;
    grid-column: 1 / span 2;
    height: 50px;
    display: flex;
+   justify-content: center;
+   background-color: #fff;
+   border-bottom: 2px solid #ff165d;
+   
 }
 nav a{
    text-decoration: none;
    color: inherit;
    font-size: 18px;
+
 }
 nav ul {
    display: flex;
+   
 }
 nav li{
    height: 50px;
@@ -245,20 +271,26 @@ nav li:hover {
    background-color:#ff165d;
 }
 .imagenformulario {
-   padding-top: 10px;
+   padding-top: 50px;
    display: flex;
+
 }
 .testimonios {
-   padding: 30px;
+   padding: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
    background-color: white;
 }
 .testimonios h2{
+   padding: 20px;
    font-size: 30px;
 }
 .testimonios h3 {
+   padding: 20px;
    font-size: 60px;
 }
 .diapositiva {
+
    display: flex;
    justify-content: flex-start;
 }
@@ -276,6 +308,7 @@ nav li:hover {
   padding: 10px;
 }
 .quehacemos{
+   padding: 70px;
    text-align: justify;
    background-color: white;
 }
@@ -286,6 +319,7 @@ nav li:hover {
 }
 .quiensomos {
    background-color: white;
+   padding: 70px;
 }
 .quiensomos h3{
    font-size: 40px;
@@ -295,6 +329,10 @@ nav li:hover {
 .faq {
    background-color: white;
    padding: 30px;
+   margin-left: 100px;
+   margin-bottom: 50px;
+   border-left: 2px solid #ff165d;
+   display: flex;
 }
 .faq h2{
    font-size: 30px;
@@ -306,8 +344,27 @@ nav li:hover {
    padding: 10px;
    text-align: left;
 }
+.faqesquerra {
 
+}
+.faqdreta {
+
+}
+.guialocal h2{
+   font-size: 40px;
+   padding: 40px;
+}
+.guialocal h3 {
+   font-size: 20px;
+   padding: 40px;
+}
+.guialocal img {
+}
 .form-contact {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding-top: 50px;
    background-color: #FFF;
 }
 
@@ -354,6 +411,8 @@ input:hover {
 }
 
 footer {
+   font-size: 20px;
    padding: 30px;
-   text-align: center;
+   background-color: #ff165d;
+   color:#FFF;
 }
