@@ -312,10 +312,18 @@ nav li:hover {
    text-align: justify;
    background-color: white;
 }
+.quehacemos h2 {
+   font-size: 40px;
+   padding: 30px;
+   text-align: center;
+}
 .quehacemos h3 {
    font-size: 50px;
    padding: 30px;
    text-align: center;
+}
+.quehacemos em{
+   color: #ff165d;
 }
 .quiensomos {
    background-color: white;
@@ -355,7 +363,7 @@ nav li:hover {
    padding: 40px;
 }
 .guialocal h3 {
-   font-size: 20px;
+   font-size: 30px;
    padding: 40px;
 }
 .guialocal img {
